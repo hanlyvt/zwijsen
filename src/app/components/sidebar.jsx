@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <aside
+    <main
       className="w-56 min-h-screen p-4 flex flex-col gap-2"
       style={{
         background:
@@ -41,6 +41,6 @@ export default function Sidebar() {
           Instellingen
         </a>
       </nav>
-    </aside>
+    </main>
   );
 }
