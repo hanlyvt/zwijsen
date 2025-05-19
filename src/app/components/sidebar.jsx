@@ -2,22 +2,26 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <aside className="bg-gradient-to-b from-blue-100 to-blue-200 w-56 min-h-screen p-4 flex flex-col gap-2">
+    <aside
+      className="w-56 min-h-screen p-4 flex flex-col gap-2"
+      style={{
+        background:
+          "linear-gradient(to bottom, rgba(1,160,226,0.05) 0%, rgba(1,160,226,0.10) 100%)",
+      }}
+    >
       <div className="mb-8">
         <div className="mb-8">
           <Image
-            src="/images/Logo.png"
+            src="/zwijsen_logo.svg"
             alt="Zwijsen logo"
-            width={120} // pas aan naar wens
-            height={48} // pas aan naar wens
-            className="h-12 w-auto"
+            width={242} // pas aan naar wens
+            height={124} // pas aan naar wens
+            className="h-20 w-auto"
             priority
           />
         </div>
-
-        <div className="text-xs text-gray-600">Breng leren tot leven</div>
       </div>
-      <nav className="flex flex-col gap-2">
+      <nav className="flex flex-col gap-2 text-right">
         <a
           href="#"
           className="py-2 px-4 rounded bg-white text-blue-700 font-semibold"

@@ -1,6 +1,7 @@
 // src/app/layout.tsx
 import "./globals.css";
 import Image from "next/image";
+
 import Sidebar from "./components/Sidebar";
 
 export default function RootLayout({
@@ -9,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="nl">
+    <html lang="en">
       <body>
         <div style={{ display: "flex", minHeight: "100vh" }}>
           <Sidebar />
