@@ -4,6 +4,7 @@ export default function Sidebar() {
   return (
     <main
       className="w-56 min-h-screen p-4 flex flex-col gap-2"
+      className="w-56 min-h-screen flex flex-col gap-2"
       style={{
         background:
           "linear-gradient(to bottom, rgba(1,160,226,0.05) 0%, rgba(1,160,226,0.10) 100%)",
@@ -17,6 +18,7 @@ export default function Sidebar() {
             width={242} // pas aan naar wens
             height={124} // pas aan naar wens
             className="h-20 w-auto"
+            className="h-24 w-auto"
             priority
           />
         </div>
@@ -26,6 +28,7 @@ export default function Sidebar() {
           href="#"
           className="py-2 px-4 rounded bg-white text-blue-700 font-semibold"
         >
+        <a href="#" className="py-2 px-4 bg-[#0069B3] text-white font-semibold">
           Dashboard
         </a>
         <a href="#" className="py-2 px-4 rounded hover:bg-white">
