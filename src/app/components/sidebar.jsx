@@ -9,7 +9,7 @@ export default function Sidebar() {
           "linear-gradient(to bottom, rgba(1,160,226,0.05) 0%, rgba(1,160,226,0.10) 100%)",
       }}
     >
-      <div className="mb-8">
+      <div className="m-4">
         <div className="mb-8">
           <Image
             src="/zwijsen_logo.svg"
@@ -24,9 +24,6 @@ export default function Sidebar() {
       <nav className="flex flex-col gap-2 text-right">
         <a href="#" className="py-2 px-4 bg-[#0069B3] text-white font-semibold">
           Dashboard
-        </a>
-        <a href="#" className="py-2 px-4 rounded hover:bg-white">
-          Werkblad scannen
         </a>
         <a href="#" className="py-2 px-4 rounded hover:bg-white">
           Leerlingen lijst

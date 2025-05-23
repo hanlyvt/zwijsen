@@ -1,4 +1,5 @@
 import DashboardCard from "./components/DashboardCard";
+import WerkbladenCard from "./components/WerkbladenCard";
 
 export default function Home() {
   // Voorbeelddata, kun je dynamisch maken
@@ -6,13 +7,13 @@ export default function Home() {
   const totaalLeerlingen = 24;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-1 gap-8 m-4">
       <DashboardCard
         title="Groeps overzicht"
         leerlingen={leerlingenExtraAandacht}
         totaalLeerlingen={totaalLeerlingen}
       />
-      {/* Andere DashboardCards... */}
+      <WerkbladenCard />
     </div>
   );
 }
