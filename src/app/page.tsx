@@ -1,20 +1,18 @@
-import Image from "next/image";
+import DashboardCard from "./components/DashboardCard";
 
 export default function Home() {
+  // Voorbeelddata, kun je dynamisch maken
+  const leerlingenExtraAandacht = 3;
+  const totaalLeerlingen = 24;
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="mb-8">
-          <Image
-            src="/zwijsen_logo.svg"
-            alt="Zwijsen logo"
-            width={242} // pas aan naar wens
-            height={124} // pas aan naar wens
-            className="h-20 w-auto"
-            priority
-          />
-        </div>
-      </main>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <DashboardCard
+        title="Groeps overzicht"
+        leerlingen={leerlingenExtraAandacht}
+        totaalLeerlingen={totaalLeerlingen}
+      />
+      {/* Andere DashboardCards... */}
     </div>
   );
 }
