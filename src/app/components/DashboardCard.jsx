@@ -16,7 +16,7 @@ export default function DashboardCard({ title, leerlingen, totaalLeerlingen }) {
   ];
 
   return (
-    <section className="bg-white rounded-xl shadow p-6 min-h-[180px] flex flex-col justify-between">
+    <section className="bg-white rounded-xl shadow p-6 min-h-[180px] flex flex-col justify-between ">
       {title && <h2 className="font-bold text-lg mb-3">{title}</h2>}
       <div className="flex items-center gap-8">
         <div className="text-6xl font-bold">{leerlingen}</div>
