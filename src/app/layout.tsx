@@ -1,3 +1,5 @@
+"use client";
+
 // src/app/layout.tsx
 import "./globals.css";
 import Image from "next/image";

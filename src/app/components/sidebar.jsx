@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -22,15 +25,13 @@ export default function Sidebar() {
         </div>
       </div>
       <nav className="flex flex-col gap-2 text-right">
-        <a href="#" className="py-2 px-4 bg-[#0069B3] text-white font-semibold">
+        <a href="/" className="py-2 px-4 bg-[#0069B3] text-white font-semibold">
           Dashboard
         </a>
-        <a href="#" className="py-2 px-4 rounded hover:bg-white">
-          Werkblad scannen
-        </a>
-        <a href="#" className="py-2 px-4 rounded hover:bg-white">
+        <a href="/leerlingenlijst" className="py-2 px-4 rounded hover:bg-white">
           Leerlingen lijst
         </a>
+
         <a href="#" className="py-2 px-4 rounded hover:bg-white">
           Evaluatie
         </a>

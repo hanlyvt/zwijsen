@@ -1,4 +1,8 @@
-import Image from "next/image";
+"use client";
+import React from "react";
+
+import DashboardCard from "./components/DashboardCard";
+import WerkbladenCard from "./components/WerkbladenCard";
 
 export default function Home() {
   return (
