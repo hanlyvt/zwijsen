@@ -1,5 +1,6 @@
 import DashboardCard from "./components/DashboardCard";
 import WerkbladenCard from "./components/WerkbladenCard";
+import Resultaten from "./components/resultaten";
 
 export default function Home() {
   // Voorbeelddata, kun je dynamisch maken
@@ -14,6 +15,7 @@ export default function Home() {
         totaalLeerlingen={totaalLeerlingen}
       />
       <WerkbladenCard />
+      <Resultaten />
     </div>
   );
 }
