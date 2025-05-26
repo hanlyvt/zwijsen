@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 import DashboardCard from "./components/DashboardCard";
 import WerkbladenCard from "./components/WerkbladenCard";
