@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic";
-const DashboardPieChart = dynamic(() => import("./DashboardPieChart"), {
-  ssr: false,
-});
+const DashboardPieChart = dynamic(() => import("./DashboardPieChart"), {});
+
 export default function DashboardCard({ title, leerlingen, totaalLeerlingen }) {
   const pieData = [
     { name: "Extra aandacht", value: leerlingen },
